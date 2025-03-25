@@ -1,0 +1,131 @@
+/* Container principal */
+#area-principal {
+    background-color: #f4f4f4;  /* Cor de fundo suave */
+    padding: 40px 0;
+    background-image: linear-gradient(to right, #009639, #f4f4f4, #ce2b37); /* Cores da bandeira da Itália */
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* Estilizando a área de conteúdos */
+#area-conteudos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo das postagens */
+.postagem {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 40px; /* Espaçamento entre as postagens */
+}
+
+/* Layout flex para as imagens e o texto ficarem lado a lado */
+.conteudo {
+    display: flex;
+    flex-direction: row;  /* Coloca as imagens e o texto lado a lado */
+    justify-content: space-between;
+    align-items: flex-start;  /* Alinha o texto e a imagem no topo */
+    gap: 20px;  /* Espaço entre o texto e as imagens */
+    margin-top: 20px;
+}
+
+/* Área das imagens */
+.slider {
+    flex: 1;
+    max-width: 620px;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Texto da história */
+.texto {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;  /* Alinha o texto à esquerda */
+    margin-top: 0;  /* Remove qualquer margem do topo */
+}
+
+.historia {
+    
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        margin-top: 0;  /* Garante que o texto começa sem espaço em branco */
+        text-indent: 30px;  /* Adiciona o recuo de 30px no início do parágrafo */
+    }
+
+h2 {
+        margin-bottom: 80px;  /* Aumenta o espaço abaixo do título */
+    }
+    
+/* História detalhada */
+.historia-detalhada {
+    display: block;  /* Mantenha visível por padrão */
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.postagem:hover .historia-detalhada {
+    /* Adiciona um efeito de hover se necessário */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Botão de "Leia mais" */
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #28a745; /* Verde da Itália */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta:hover {
+    background-color: #218838; /* Tom mais escuro de verde */
+}
+
+/* Responsividade: Em telas menores, as imagens e o texto ficam empilhados (coluna) */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;  /* Empilha o conteúdo em coluna em vez de linha */
+        align-items: center;  /* Centraliza o conteúdo */
+    }
+
+    .slider, .texto {
+        max-width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+    }
+}
+.titulo-com-imagem {
+    display: flex; /* Usa flexbox para alinhar a imagem e o título */
+    align-items: center; /* Alinha verticalmente a imagem e o título */
+    gap: 20px; /* Espaço entre a imagem e o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilo para a imagem ao lado do título */
+.imagem-titulo {
+    width: 400px; /* Ajuste o tamanho da imagem */
+    height: auto;
+}

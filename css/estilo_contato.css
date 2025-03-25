@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+    font-family: "Trebuchet MS";
+}
+h2{
+    color: rgb(211, 93, 9);
+}
+#cabecalho {
+    background-color: rgb(224, 117, 16);
+    height: 230px;
+    padding: 20px;
+    font-size: 2em;
+}
+.imagem-titulo{
+    width: 200px;
+    height: 140px;
+}
+#outdoor {
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    font-size: 2.5em;
+    
+}
+
+#area-menu {
+    text-align: center;
+    padding: 10px;
+    
+    
+    
+}
+
+.branco {
+    color: white;
+}
+/* área dos links */
+
+#cabecalho a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    
+}
+
+
+#home:hover{
+    background-color: #009246;
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+    
+
+}
+#desenvolvimento-menu:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+
+}
+#contato-menu:hover{
+    background-color: #CE1126;
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+    
+
+}
+#nossaHistoria-menu:hover{
+    background: linear-gradient(to right,#009246 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%,#CE1126 66.66%);
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+    width: 100%; /* O fundo ocupa toda a largura do elemento */
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* CONTEÚDO */
+
+
+/* FADE */
+
+
+/* Efeito de fade nas postagens */
+.postagem {
+    opacity: 0; /* Inicialmente as postagens estão invisíveis */
+    transition: opacity 1s ease-in-out; /* Animação suave de transição */
+}
+
+.fade-in {
+    opacity: 1; /* Quando a classe 'fade-in' for adicionada, a postagem se torna visível */
+}
+
+
+/*///////////////////////////////////////*/
+
+
+
+/* ------------- SLIDER ---------------*/
+/* Slider container */
+/* Slider com setas */
+
+.slider2 {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Defina a altura do seu slider */
+    overflow: hidden;
+}
+
+.slide2 {
+    position: absolute;
+    top: 0;
+    left: 100%; /* As imagens começam à direita */
+    width: 100%;
+    height: 100%;
+    transition: left 1s ease-in-out; /* Animação suave */
+}
+
+.slide2.active {
+    left: 0; /* Quando a imagem é ativa, ela fica visível */
+}
+
+
+
+
+#post1{
+    margin-top: 20px;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Container de imagens dentro do slider */
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cada imagem do slider */
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo das setas */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+
+/* A seta "prev" (esquerda) */
+.prev {
+    left: 10px;
+}
+
+/* A seta "next" (direita) */
+.next {
+    right: 10px;
+}
+
+/* Alterar cor das setas ao passar o mouse */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*///////////////////////////////////////*/
+
+/* Botão de "Leia mais" */
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #28a745; /* Verde da Itália */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta:hover {
+    background-color: #218838; /* Tom mais escuro de verde */
+}
+
+#area-principal {
+    width: 920px;
+    margin: 0 auto;
+    font-size: 1em;
+    padding: 20px;
+    
+}
+
+#area-conteudos {
+    background-color: rgb(255, 255, 255);
+    width: 660px;
+    float: left;
+}
+
+#area-lateral {
+    background-color: rgb(253, 253, 253);
+    width: 240px;
+    float: right;
+    
+    
+}
+
+#rodape {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: #ccc;
+}
+
+.postagem {
+    padding: 10px;
+    margin-bottom: 20px;
+    background: white;
+}
+.data-postagem{
+    font-size: 0.8em;
+    border-bottom: solid 1px #f4f4f4;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.conteudo-lateral{
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+h3{
+    background-color: gray;
+    padding: 5px;
+}
+
+
+
+
+#contato {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#informacoes, #formulario {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#localizacao {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+#mapa iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
